@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>伪类</title>
+		<style>
+			/*索引从1开始*/
+			/*匹配父元素下的第一个标签为p，则匹配*/
+			/*p:nth-child(1){
+				background:red;
+			}*/
+			/*p:nth-child(2){
+				background:yellow;
+			}*/
+			
+			/*匹配所有的p标签*/
+			/*p:nth-child(n){
+				background:purple;
+			}*/
+			/*匹配父元素下的 所有的偶数标签 even*/
+			/*p:nth-child(2n){
+				background:purple;
+			}*/
+			/*匹配父元素下的 所有的奇数标签 odds*/
+			/*p:nth-child(2n+1){
+				background:yellow;
+			}*/
+			/*倒数第几个*/
+			/*p:nth-last-child(1){
+				background:red;
+			}*/
+			/*匹配p元素父元素下类型为p的标签*/
+			/*p:nth-of-type(1){
+				background:red;
+			}*/
+			/*p:only-child -- 匹配p父级标签下只有一个节点 为p*/
+			/*p:only-of-type  -- 匹配类型*/
+			
+			/*对于一个p标签*/
+			p:first-line{
+				/*针对首行的设置*/
+			}
+			p:first-letter{
+				/*首字的设置*/
+			}
+			/*鼠标选中时 的样式*/
+			/*p::selection{
+				background:red;
+				color:#fff;
+			}*/
+			/*开头*/
+			/*p:before{
+				content:"[";
+				color:deeppink;
+			}*/
+			/*结尾*/
+			/*p:after{
+				content:"]";
+				color:deeppink;
+			}*/
+			/*除了样式名包含abc的p标签*/
+			/*p:not(.abc){
+				background:blue;
+				color:white;
+			}*/
+			/*~相邻的后面*/
+			p.abc~p{
+				line-height:50px;
+				font-size:26px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>hello</h1>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p>hello</p>
+		<p class="abc">hello</p>
+		<p>hello</p>
+		git config --global user.email "邮箱地址"
+		git config --global user.name "用户名"
+	</body>
+</html>
